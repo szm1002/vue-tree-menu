@@ -28,7 +28,9 @@ export default {
   },
   methods: {
     toggleFolder: function () {
-      this.open = !this.open
+      if (this.isFolder) {
+        this.open = !this.open
+      }
     }
   }
 }
